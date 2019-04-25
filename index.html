@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wedding invite</title>
+    <link rel="stylesheet" href="styles/spring.css">
+    <link rel="stylesheet" href="styles/formal.css">
+    <link rel="stylesheet" href="styles/classic.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  </head>
+  <body>
+    
+    <h1>Wedding Invitation Designer</h1>
+    <div class="column-container">
+      <div class="column">
+        <table class="table">
+          <tr>
+            <th id="classic"><button onclick="classicStyle()">Classic</button><th>
+            <th id="spring"><button onClick="springStyle()">Spring</button><th>
+            <th id="formal"><button onClick="formalStyle()">Formal</button><th>
+          </tr>  
+        </table>    
+        <form action="/my-handling-form-page" method="post">
+          <div class="box-spacing">
+            1st Name:<br>
+            <input type="text" class="inputs" id="firstname" name="firstname">
+          </div>
+          <div class="box-spacing">
+            2nd Name:<br>
+            <input type="text" class="inputs" id="secondname" name="secondname">
+          </div>
+          <div class="box-spacing">
+            Last Name:<br>
+            <input type="text" class="inputs" name="lastname" id="lastname">
+          </div>
+          <div class="box-spacing">
+            Date:<br>
+            <input type="date" class="inputs" id="date" name="date">
+          </div>
+          <div class="box-spacing">
+            Wedding Location:<br>
+            <input type="text" class="inputs" id="location" name="location">
+          </div>
+        </form>    
+      </div>
+      
+      <div class="column">
+        <div class="classic card" id="invitation">
+            <h1 id="initials"></h1><br>
+            <p>You are cordially invited to the wedding of</p>
+            <ul id="inline-list">
+              <li>
+                <h2><span id="firstname-copy"></span></h2>
+                  <span>&</span>
+                  <h2><span id="secondname-copy"></span></h2>
+              </li>  
+            </ul><br>
+            <h2 id="lastname-copy"></h2><br>
+            <p id="date-copy"></p>
+            <p id="location-copy"></p>
+          </div>
+      </div>
+    </div>  
+    <script src="index.js"></script>
+  </body>
+
+</html>

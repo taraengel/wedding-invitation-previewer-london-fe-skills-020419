@@ -1,0 +1,69 @@
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+body {
+ font-family: 'Vollkorn', serif;
+ background-color: #601838;
+ color: white;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+ color: white;
+ text-decoration: none;
+}
+
+a:hover {
+  color: #D3D3D3;
+}
+
+#inline-list li{
+  display: inline;
+}
+
+.column-container {
+  display: flex;
+  width: 100%;
+}
+
+.column {
+ flex: 1;
+ padding: 15px;
+ 
+}
+
+.box-spacing {
+  padding: 10px;
+  margin-left: 35%;
+}
+
+.inputs {
+  border-radius: 5px; 
+  border: 3px solid black;
+  background-color: #601838;
+  height: 20px;
+  width: 170px;
+}
+
+.table {
+  margin-left: 36%;
+  border-bottom: 1px solid black;
+}
+
+.card {
+  margin-top: -20px;
+  height: 630px;
+  width: 100%;
+  font-family: 'Pacifico', cursive;
+  border-radius: 8px;
+}
+
